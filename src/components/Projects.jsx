@@ -33,18 +33,18 @@ const projectsData = {
             description: (
                 <>
                     <p className="mb-4">
-                        A comprehensive exploration of Reinforcement Learning (RL) applied to stochastic decision processes, drawing parallels between gaming strategies (Blackjack) and financial risk management. Also includes implementation of control systems (CartPole) using Gymnasium.
+                        A comprehensive exploration of Reinforcement Learning (RL) applied to stochastic decision processes, drawing parallels between gaming strategies (Blackjack) and financial risk management.
                     </p>
                     <p className="mb-4">
                         This project implements Q-learning agents to optimize decision-making under uncertainty, analyzing convergence properties and policy stability.
                     </p>
-                    <div className="mb-4">
-                        <strong className="text-white block mb-2">Proposed Research Extensions:</strong>
+                    <div className="mt-4">
+                        <h4 className="text-lg font-semibold text-white mb-2">Proposed Research Extensions:</h4>
                         <ul className="list-disc list-inside space-y-1 text-gray-400">
-                            <li><strong>HFT Adaptation:</strong> Adapting Q-Learning from Blackjack to Limit Order Books for High-Frequency Trading.</li>
-                            <li><strong>Portfolio Optimization:</strong> Using Deep Q-Networks (DQN) for dynamic portfolio rebalancing vs. Mean-Variance.</li>
-                            <li><strong>Behavioral Modeling:</strong> Inverse RL to model irrational retail trader behavior in volatile markets.</li>
-                            <li><strong>Regime Stress Testing:</strong> Evaluating agent robustness under non-stationary win probabilities (market regime shifts).</li>
+                            <li><strong className="text-gray-300">HFT Adaptation:</strong> Adapting Q-Learning from Blackjack to Limit Order Books for High-Frequency Trading.</li>
+                            <li><strong className="text-gray-300">Portfolio Optimization:</strong> Using Deep Q-Networks (DQN) for dynamic portfolio rebalancing vs. Mean-Variance.</li>
+                            <li><strong className="text-gray-300">Behavioral Modeling:</strong> Inverse RL to model irrational retail trader behavior in volatile markets.</li>
+                            <li><strong className="text-gray-300">Regime Stress Testing:</strong> Evaluating agent robustness under non-stationary win probabilities (market regime shifts).</li>
                         </ul>
                     </div>
                 </>
