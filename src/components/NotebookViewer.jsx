@@ -3,23 +3,21 @@ import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import remarkGfm from 'remark-gfm';
-import notebookData from '../assets/fx_carry_analysis.json';
-
-const NotebookViewer = () => {
+const NotebookViewer = ({ notebookData, title }) => {
     const [cells, setCells] = useState([]);
 
     useEffect(() => {
         if (notebookData && notebookData.cells) {
             setCells(notebookData.cells);
         }
-    }, []);
+    }, [notebookData]);
 
     return (
         <div className="max-w-4xl mx-auto py-20 px-4">
             <div className="mb-12">
-                <h1 className="text-4xl font-bold mb-4">FX Carry Trade Analysis</h1>
+                <h1 className="text-4xl font-bold mb-4">{title}</h1>
                 <p className="text-gray-400">
-                    A technical case study analyzing Foreign Exchange Carry Strategies using data from 2000-2025.
+                    A technical deep dive into the analysis and implementation details.
                 </p>
             </div>
 

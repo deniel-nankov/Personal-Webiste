@@ -33,7 +33,7 @@ const projectsData = {
             description: (
                 <>
                     <p className="mb-4">
-                        A comprehensive exploration of Reinforcement Learning (RL) applied to stochastic decision processes, drawing parallels between gaming strategies (Blackjack) and financial risk management.
+                        A comprehensive exploration of Reinforcement Learning (RL) applied to stochastic decision processes, drawing parallels between gaming strategies (Blackjack) and financial risk management. Also includes implementation of control systems (CartPole) using Gymnasium.
                     </p>
                     <p className="mb-4">
                         This project implements Q-learning agents to optimize decision-making under uncertainty, analyzing convergence properties and policy stability.
