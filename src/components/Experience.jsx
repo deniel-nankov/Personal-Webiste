@@ -32,12 +32,12 @@ const Experience = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
-                        className="glass-panel p-8 rounded-2xl"
+                        className="glass-panel p-8 rounded-2xl bg-white/50 border-gray-200 dark:bg-dark-card/50 dark:border-dark-border"
                     >
                         <div className="flex flex-col md:flex-row justify-between md:items-center mb-4 gap-2">
                             <div>
-                                <h3 className="text-xl font-bold text-white">{exp.role}</h3>
-                                <p className="text-primary-400 font-medium">{exp.company}</p>
+                                <h3 className="text-xl font-bold text-[var(--text-primary)]">{exp.role}</h3>
+                                <p className="text-primary-600 dark:text-primary-400 font-medium">{exp.company}</p>
                             </div>
                             <div className="flex flex-col md:items-end text-sm text-gray-500">
                                 <div className="flex items-center gap-1">
@@ -50,7 +50,7 @@ const Experience = () => {
                                 </div>
                             </div>
                         </div>
-                        <p className="text-gray-400 leading-relaxed max-w-3xl">
+                        <p className="text-[var(--text-secondary)] leading-relaxed max-w-3xl">
                             {exp.description}
                         </p>
                     </motion.div>

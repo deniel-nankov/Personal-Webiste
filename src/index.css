@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+:root {
+  --bg-primary: #ffffff;
+  --bg-card: #f3f4f6;
+  --border-color: #e5e7eb;
+  --text-primary: #000000;
+  --text-secondary: #374151;
+}
+
+.dark {
+  --bg-primary: #000000;
+  --bg-card: #171717;
+  --border-color: #262626;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+}
+
 @theme {
   --font-sans: 'Inter', sans-serif;
   --font-heading: 'Outfit', sans-serif;
@@ -16,9 +32,9 @@
   --color-primary-900: #0c4a6e;
   --color-primary-950: #082f49;
 
-  --color-dark-bg: #0a0a0a;
-  --color-dark-card: #171717;
-  --color-dark-border: #262626;
+  --color-dark-bg: var(--bg-primary);
+  --color-dark-card: var(--bg-card);
+  --color-dark-border: var(--border-color);
 
   --animate-fade-in: fadeIn 0.5s ease-out;
   --animate-slide-up: slideUp 0.5s ease-out;
@@ -48,7 +64,7 @@
 
 @layer base {
   body {
-    @apply bg-dark-bg text-gray-100 font-sans antialiased selection:bg-primary-500/30;
+    @apply bg-dark-bg text-[var(--text-primary)] font-sans antialiased selection:bg-primary-500/30;
   }
 
   h1,
